@@ -1,0 +1,35 @@
+#table01 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table01 td, #table01 th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#table01 tr:nth-child(even){background-color: white;}
+
+
+
+#table01 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: blue;
+    color: white;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+table#table01 tr:nth-child(odd) {
+    background-color: white;
+}
