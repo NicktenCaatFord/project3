@@ -373,16 +373,32 @@ table#table01 tr:nth-child(odd) {
 
 iframe { position: right;}
 
+
+.logo {
+  display: inline-block;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 15px;
+  height: 180px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    height: 75px;
+}
+
+.items {
+  margin-left: 320px;
+  margin-top: 10px;
 }
 
 li {
     float: left;
+    margin-left: 20px;
 }
 
 li a {
