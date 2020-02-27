@@ -671,3 +671,10 @@ input[type=text]{
 .textarea{
   width: 200px;
 }
+
+footer {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  height: 30px;
+}
