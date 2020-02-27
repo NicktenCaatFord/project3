@@ -87,6 +87,7 @@ text-align: center;}
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+  margin-top: 50px;
 }
 
 @-webkit-keyframes fade {
@@ -265,6 +266,7 @@ table#table01 tr:nth-child(odd) {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    margin-top: 50px;
 }
 
 #table01 td, #table01 th {
@@ -295,6 +297,10 @@ input[type=text], select, textarea {
 }
 table#table01 tr:nth-child(odd) {
     background-color: white;
+}
+
+.titleMedia {
+  margin-top: 50px;
 }
 
 /* colicss */
