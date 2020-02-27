@@ -657,3 +657,17 @@ div.content {
   background: #ff6600;
   color: white;
 }
+
+input[type=text]{
+  width: 200px;
+  height: 30px;
+
+}
+
+#formulier{
+  margin-top: 50px;
+}
+
+.textarea{
+  width: 200px;
+}

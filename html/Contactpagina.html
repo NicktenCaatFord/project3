@@ -24,22 +24,22 @@
 		</div>
 		<div id="formulier">
 			<form method="post" name="form" onsubmit="return validateForm()">
-				Naam:
+				<p>Naam:</p>
 				<input type="text" name="tekst" size="25" >
-				E-Mail:
+				<p>E-Mail:</p>
 				<input type="text" name="tekst" size="25" >
-				<textarea rows="4" cols="25" name="tekst"> Basis tekst </textarea>
+				<p><textarea rows="4" cols="1" name="tekst" class="textarea"> Basis tekst </textarea><p>
 				verzenden:
 				<INPUT type="submit" name="submit" value="verzenden">
 				<p id="contact"></p>
 				
-				Anders Contact
-				
-				Colicss
-				7776 AG, Slagharen
-				06-12412498
-				KVK: 05076893
+				<h2>Anders Contact</h2>
+				<p class="formTekst">Colicss</p>
+				<p class="formTekst">7776 AG, Slagharen</p>
+				<p class="formTekst">06-12412498</p>
+				<p class="formTekst">KVK: 05076893</p>
 			</form>
+		</div>
 			<script type="text/javascript">
 				function validateForm() {
 				var x = document.forms["form"]["tekst"].value;
