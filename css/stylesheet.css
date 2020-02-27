@@ -1,5 +1,7 @@
 * {box-sizing:border-box}
  
+#textcenter{ 
+text-align: center;}
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
