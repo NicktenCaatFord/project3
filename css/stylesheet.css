@@ -684,6 +684,6 @@ footer {
   text-align: center;
   height: 30px;
   bottom: 0;
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
