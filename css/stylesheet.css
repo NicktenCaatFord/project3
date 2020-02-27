@@ -672,7 +672,18 @@ input[type=text]{
   width: 200px;
 }
 
+
 #contactInfo{
   background-color: white;
   width: 250px;
+
+}
+footer {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  height: 30px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
