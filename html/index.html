@@ -1,99 +1,91 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<div class="header" >
 			<link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
 		</div>
-		</head>
-		<body background="../images/clouds-19.jpg">
-			<div class="menu" >
-				<a  href="index.html"><img class="logo" src="../images/logo.png"></a>
+	</head>
+	<body background="../images/clouds-19.jpg">
+		<div class="menu" >
+			<a  href="index.html"><img class="logo" src="../images/logo.png"></a>
 			<ul>
-			  <div class="items">
-				<li><a href="index.html" target="target_frame">HomePage</a></li>
-				<li><a href="info.html" target="target_frame">Algemene Informatie</a></li>
-				<li><a href="hostingInfo.html" target="target_frame">Informatie over hosting</a></li>
-				<li><a href="cloudInfo.html" target="target_frame">Informatie over cloud</a></li>
-				<li><a href="contactPagina.html" target="target_frame">Contact</a></li>
-				<li><a href="klantPagina.html" target="target_frame">Klantenpagina</a></li>
-				<li><a href="socialMedia.html" target="target_frame">Social Media</a> </li>
-			  </div>
+				<div class="items">
+					<li><a href="index.html" target="target_frame">HomePage</a></li>
+					<li><a href="info.html" target="target_frame">Algemene Informatie</a></li>
+					<li><a href="hostingInfo.html" target="target_frame">Informatie over hosting</a></li>
+					<li><a href="cloudInfo.html" target="target_frame">Informatie over cloud</a></li>
+					<li><a href="contactPagina.html" target="target_frame">Contact</a></li>
+					<li><a href="klantPagina.html" target="target_frame">Klantenpagina</a></li>
+					<li><a href="socialMedia.html" target="target_frame">Social Media</a> </li>
+				</div>
 			</ul>
-				<br>
+			<br>
+		</div>
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 3</div>
+				<img src="../images/gettyservers.jpg" style="width:100%">
+				<div class="text">Onze Hosting Servers</div>
 			</div>
-			<div class="slideshow-container">
-				<div class="mySlides fade">
-			     <div class="numbertext">1 / 3</div>
-			     <img src="../images/gettyservers.jpg" style="width:100%">
-			     <div class="text">Onze Hosting Servers</div>
-			   </div>
-
-			   <div class="mySlides fade">
-			     <div class="numbertext">2 / 3</div>
-			     <img src="../images/iStock_71952335_LARGE-1024x683.jpg" style="width:100%">
-			     <div class="text">Onze Cloud Servers</div>
-			   </div>
-
-			   <div class="mySlides fade">
-			     <div class="numbertext">3 / 3</div>
-			     <img src="../images/server_close-up.jpg" style="width:100%">
-			     <div class="text">Onze Cable Management</div>
-			   </div>
-
-				 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 3</div>
+				<img src="../images/iStock_71952335_LARGE-1024x683.jpg" style="width:100%">
+				<div class="text">Onze Cloud Servers</div>
+			</div>
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 3</div>
+				<img src="../images/server_close-up.jpg" style="width:100%">
+				<div class="text">Onze Cable Management</div>
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
 		
 		<script>
 		var slideIndex = 1;
 		showSlides(slideIndex);
-
 		function plusSlides(n) {
-		  showSlides(slideIndex += n);
+		showSlides(slideIndex += n);
 		}
-
 		function currentSlide(n) {
-		  showSlides(slideIndex = n);
+		showSlides(slideIndex = n);
 		}
-
 		function showSlides(n) {
-		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("dot");
-		  if (n > slides.length) {slideIndex = 1}
-		  if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-		      slides[i].style.display = "none";
-		  }
-		  for (i = 0; i < dots.length; i++) {
-		      dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "block";
-		  dots[slideIndex-1].className += " active";
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
 		}
 		var slideIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
+		carousel();
+		function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > x.length) {slideIndex = 1}
+		x[slideIndex-1].style.display = "block";
+		setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
 		</script>
-
-			<div class="footer" width="100%" height="100%"></div>
-		</body>
+		<div class="footer" width="100%" height="100%"></div>
+	</body>
 </html>
