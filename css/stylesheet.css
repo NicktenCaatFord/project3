@@ -671,3 +671,8 @@ input[type=text]{
 .textarea{
   width: 200px;
 }
+
+#contactInfo{
+  background-color: white;
+  width: 250px;
+}

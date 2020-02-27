@@ -23,34 +23,47 @@
 			<br>
 		</div>
 		<div id="formulier">
-			<form method="post" name="form" onsubmit="return validateForm()">
+			<form method="post" name="form" onsubmit="return validate()" action="contactPagina.html">
 				<p>Naam:</p>
-				<input type="text" name="tekst" size="25" >
+				<input type="text" name="name" size="25" >
 				<p>E-Mail:</p>
-				<input type="text" name="tekst" size="25" >
-				<p><textarea rows="4" cols="1" name="tekst" class="textarea"> Basis tekst </textarea><p>
+				<input type="e-mail" name="mail" size="25" >
+				<p><textarea rows="4" cols="1" class="textarea" name="text"> Basis tekst </textarea><p>
 				verzenden:
 				<INPUT type="submit" name="submit" value="verzenden">
 				<p id="contact"></p>
-				
+			<div id="contactInfo">
 				<h2>Anders Contact</h2>
-				<p class="formTekst">Colicss</p>
-				<p class="formTekst">7776 AG, Slagharen</p>
-				<p class="formTekst">06-12412498</p>
-				<p class="formTekst">KVK: 05076893</p>
+				<p>Colicss</p>
+				<p>7776 AG, Slagharen</p>
+				<p>06-12412498</p>
+				<p>KVK: 05076893</p>
+			</div>
 			</form>
 		</div>
 			<script type="text/javascript">
-				function validateForm() {
-				var x = document.forms["form"]["tekst"].value;
-				if (x == "") {
-				alert("Alle velden zijn verplicht!");
-				return false;
-				}
-				else{
-					alert('Bedankt voor uw formulier!');
-				}
-				}
+				<!--
+      // Form validation code will come here.
+      function validate() {
+      
+         if( document.form.name.value == "" ) {
+            alert( "Vul uw naam in aub!" );
+            document.form.name.focus() ;
+            return false;
+         }
+         if( document.form.mail.value == "" ) {
+            alert( "Vul uw e-mail in aub!" );
+            document.form.mail.focus() ;
+            return false;
+         }
+         if (document.form.text.value == "") {
+         	alert("Type hier uw bericht in aub!");
+         	document.form.text.focus();
+         	return false;
+         }
+         return(alert('Uw bericht is verzonden!'));
+      }
+   //-->
 			</script>
 		</body>
 	</html>
